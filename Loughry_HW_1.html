@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--Leveraged VS Code HTML boilerplate extention to generate HTML outline-->
+<html style="background-color: rgba(0, 0, 0, 0.849);">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Craig Loughry - Homework 1</title>
+    <meta name="description" content="FizzBuzz">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <h2 style="text-align: center; font-size: 50px; font-weight: bold;text-decoration: underline;font-family:cursive;margin-bottom: 10px;color: white;">
+      FizzBuzz in HTML
+    </h2>
+    <h3 style="color: white;margin: 10px;padding: 10px;text-align: center;">
+      Week 1 Homework - Craig Loughry
+    </h3>
+    <div style="font-size: 30px;color: white;margin-bottom: 10px;text-align: center;">
+      Start:
+    </div>
+    <div id = 'Result' style="font-size: 20px;color: white;text-align: center;">
+      <script>
+        function fizzBuzz(){
+          for(let i = 1; i <= 150; i++) {
+            if ((i % 3 === 0) && (i % 5 === 0)){
+              print('"FizzBuzz"');
+            }
+            else if (i % 3 === 0) {
+              print('"Fizz"');
+            }
+            else if (i % 5 === 0){
+              print('"Buzz"');
+            } 
+            else {
+              print(i);
+            } 
+          }
+        }
+            var result = document.getElementById('Result');
+  
+            function print(output){
+            result.innerHTML += output + '<br>';
+        }
+        fizzBuzz();
+      </script>
+    </div>
+  </body>
+</html>
